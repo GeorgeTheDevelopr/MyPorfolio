@@ -1,0 +1,376 @@
+/* Presets, Defaults and non specifics (for all) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #2D2D2A
+}
+
+.container {
+    margin: 0px 10px 10px 10px;
+}
+
+h2 {
+    font-family: Titillium Web;
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-family: Dosis;
+    font-size: 1.3rem;
+}
+
+a {
+    font-family: Dosis;
+}
+
+.profilePic {
+    max-width: 310px;
+}
+
+
+
+/* Mobile Display */
+    /* HEADER & NAV  - Mobile */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+   .header {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: #E6E8E6;
+       padding: 2rem 1rem;
+       border-radius: 0 0 .75rem .75rem;
+   }
+   
+   .container > .header h1 {
+       margin: 0;
+       font-family: Sura, serif;
+       font-size: 5vw;
+       color: #2D2D2A;
+       ;
+   }
+
+   .container > .header .bg-head {
+       color: #E6E8E6;
+       background-color: #F15025;
+       padding: .4rem .5rem;
+       border: .3rem black solid;
+       text-transform: uppercase;
+   }
+
+   .nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+   }
+
+   .container > .header > .nav ul {
+       list-style-type: none;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .container > .header > .nav > ul li {
+       margin:  .4rem;
+   }
+   
+   .conainer > header > .nav > ul a:hover, a:visited, a:link, a:active {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black
+   }
+
+    .container > .header > .nav > ul a:hover {
+        color: #E6E8E6;
+        background-color: #F15025;
+        padding: .3rem .3rem;
+        border: .2rem black solid;
+        font-weight: bold;
+        font-size: 1.5rem;
+
+    }
+    /* END HEADER & NAV */
+
+
+    /* ABOUT ME/BIO SECTION - Mobile */
+    .bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #E6E8E6;
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+        border-radius: .75rem .75rem .75rem .75rem;
+    }
+
+   img {
+        width: 75%;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 20px;
+        text-align: center;
+        border: .5rem solid #2D2D2A;
+}
+
+    #fcc {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: #F15025;
+        text-decoration: underline
+    }
+    /* END OF ABOUT ME/BIO SECTION */
+
+    /* PROJECTS SECTION - Mobile */
+    .projectsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box {
+        background-color: #E6E8E6;
+        width: 60%;
+        height: 14rem;
+        margin: 1rem 0;
+        max-width: 360px;
+    }   
+
+    .projects {
+        color: white;
+    }
+
+    .languages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .fab {
+        color: white
+    }
+    /* FOOTER SECTION - Mobile */
+    /* Form */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs {
+        width: 20rem;
+        max-width: 30rem;
+        height: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-titles {
+        font-family: Titillium Web;
+        font-size: 1.3rem;
+        color: #E6E8E6;
+    }
+
+
+    #message-box {
+        height: 144px;
+    }
+
+    .submit {
+        color: #E6E8E6;
+        background-color: #F15025;
+        padding: .3rem .3rem;
+        border: .1rem black solid;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+    .legend {
+        font-family: Titillium Web;
+        font-size: 2rem;
+        color: #E6E8E6;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        margin-top: 1.4rem;
+    }
+
+    .other-links {
+        margin-top: 2rem;
+        background-color: #E6E8E6;
+        border-radius: .75rem .75rem 0 0;
+    }
+
+    .footer-text {
+        color: #2D2D2A;
+    }
+    /* END OF FOOTER */
+
+/* Tablet & Desktop Display*/
+@media screen and (min-width: 581px) {
+    /* HEADER & NAV - Tablet & Desktop */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+   .header {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: #E6E8E6;
+       padding: 2rem 1rem;
+       border-radius: 0 0 .75rem .75rem;
+   }
+   
+   .container > .header h1 {
+       margin: 0;
+       font-family: Sura, serif;
+       font-size: 5vw;
+       color: #2D2D2A;
+       ;
+   }
+
+   .container > .header .bg-head {
+       color: #E6E8E6;
+       background-color: #F15025;
+       padding: .4rem .5rem;
+       border: .3rem black solid;
+       text-transform: uppercase;
+   }
+
+   .nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+   }
+
+   .container > .header > .nav ul {
+       list-style-type: none;
+       display: flex;
+       flex-direction: row;
+   }
+
+   .container > .header > .nav > ul li {
+       margin:  .4rem;
+   }
+   
+   .conainer > header > .nav > ul a:hover, a:visited, a:link, a:active {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black
+   }
+
+    .container > .header > .nav > ul a:hover {
+        color: #E6E8E6;
+        background-color: #F15025;
+        padding: .3rem .3rem;
+        border: .2rem black solid;
+        font-weight: bold;
+        font-size: 1.5rem;
+
+    }
+
+    /* END HEADER & NAV */
+
+    /* ABOUT ME/BIO - Tablet & Desktop */
+    .bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #E6E8E6;
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+        border-radius: .75rem .75rem .75rem .75rem;
+    }
+
+   img {
+        width: 75%;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 20px;
+        text-align: center;
+        border: .5rem solid #2D2D2A;
+}
+
+    #fcc {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: #F15025;
+        text-decoration: underline
+    }
+    /* END OF ABOUT ME/BIO */
+
+    /* PROJECTS SECTION - Tablet & Desktop */
+    .projectsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .box {
+        background-color: #E6E8E6;
+        width: 60%;
+        height: 14rem;
+        margin: 1rem 1rem;
+        max-width: 360px;
+    }   
+
+    .projects {
+        color: white;
+    }
+
+    /* FOOTER SECTION - Tablet & Desktop */
+    /* Form */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs {
+        width: 20rem;
+        max-width: 30rem;
+        height: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-titles {
+        font-family: Titillium Web;
+        font-size: 1.3rem;
+        color: #E6E8E6;
+    }
+
+    #message-box {
+        height: 144px;
+    }
+
+    .submit {
+        color: #E6E8E6;
+        background-color: #F15025;
+        padding: .3rem .3rem;
+        border: .1rem black solid;
+        font-weight: bold;
+        font-size: 0.8rem;
+
+    }
+    /* END OF FOOTER */
+}
+
+/* end of media queries */
