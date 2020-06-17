@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta lang="en">
+        
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Sura&family=Titillium+Web&display=swap" rel="stylesheet"> 
     <!-- Font Awesome Icons -->
@@ -33,20 +32,41 @@
             <div class="bio">
                 <h2  id="bio">About Me</h2>
                 <img src="images/26195386.jpg" class="profilePic" alt="Profle Pic">
-                <p> My name is George Brown and I am a life-long learner and student of the study of Computer Programming and Web Development. I love all of its intricaties and quirks, along with its unlimited possibilies for personal creativity. I plan on staying above all the latest technologies and languages as this skill evolves. Currently enrolled in Thinkful's Immersive Engineering Program !</p>
+                <p> My name is George Brown and I am a life-long learner and student of the study of Computer Programming and Web Development. I love all of its intricacies and quirks, along with its unlimited possibilies for personal creativity. I plan on staying above all the latest technologies and languages as this skill evolves. Currently enrolled in Thinkful's Immersive Engineering Program!</p>
                 <hr>
                 <h2>Background Story</h2>
-                <p>I first discovered the art of web development in early 2017. I've always had a subtle interest for computer development, whether it was game or web development, I've always found it interesting. So, when I stumbled upon some free courses on <a id="fcc" href="https://freecodecamp.com">FreeCodeCamp</a> and discovered that I could learn this on my own for free, I dove in full fledged. I started with their HTML course, and slowly began learning CSS. After making a few ideas and mockups, I shortly began to become a little more confident with HTML & CSS. I would then for the next few years, on and off code ideas and mockups for friend projects (i.e. static shopping pages), personal bio pages, etc. I am now ready to tackle everything else this skill has to provide.</p>
+                <p>Traditionally, I am a musician and nerd at heard. Ever since a kid, I've always been intrigued with electronics and knew that I was going to do in life that dealt with handling technology. I began making music at 13, and learned how to "self record" myself at age 16. From then is when I really honed my tech skills, countlessly following forums, blogs, YouTube, in search of the best ways I could improve on my recording skills. After almost a decade, I can say that I was at a plateu, to where I started question what would be my next step, as music wasn't really cutting it out for me (I still love and make music, but the industry is very competitive), that's when I started looking into other avenues. Again, being tech savvy as kid and up into my adult years (all of my jobs I've worked up to that point,involved tech somehow, with my most recent job being "Device Repair Technician") , I stumbled upon web development. I first discovered the art of web development in early 2017. I've always had a subtle interest for computer development, whether it was game or web development, I've always found it interesting. So, when I stumbled upon some free courses on <a id="fcc" href="https://freecodecamp.com">FreeCodeCamp</a> and discovered that I could learn this on my own for free, I dove in full fledged. I started with their HTML course, and slowly began learning CSS. After making a few ideas and mockups, I shortly began to become a little more confident with HTML & CSS. I would then for the next few years, on and off code ideas and mockups for friend projects (i.e. static shopping pages), personal bio pages, etc. I am now ready to tackle everything else this skill has to provide.</p>
             </div>
         </section>
                 
         <section>
                 <h2 class="projects" id="projects">Projects:</h2>
                     <div class="projectsContainer">
-                    <div class="box box1"><span>COMING SOON</span></div>
-                    <div class="box box2"><span>COMING SOON</span></div>
-                    <div class="box box3"><span>COMING SOON</span></div>
-                </div>
+                        <div class="projectPlaceholder">
+                            <div class="box box1"><img src="images/quizapp.jpg" class="boxOneImg" alt="Quiz App Screenshot"></div>
+                            <p class="projectTitle">Music Quiz App</p>
+                            <p class="projectDesc">Simple Single Page Web app that generates 5 music related questions, based on chosen difficulty (easy, medium, hard). For those who wants to challenge their music knowledge across all genres. Built with HTML5, CSS, JavaScript and JQuery.</p>
+                            <p class="projectLinks"><a href="https://github.com/thinkful-ei-panda/Quiz-App-George-Rebecca">Repo</a></p>
+                            <p class="projectLinks"><a href="https://thinkful-ei-panda.github.io/Quiz-App-George-Rebecca/">Live Link</a></p>
+                        </div>
+
+                        <div class="projectPlaceholder">
+                            <div class="box box1"></div>
+                            <p class="projectTitle">Bookmark App *Coming Soon</p>
+                            <p class="projectDesc">Single Page app that calls upon Thinkful's API to perform CRUD operations on. This app allows you to add, edit, delete and rate bookmark. Additional features include being able to add links and a description to the bookmark. Built with JQuery.</p>
+                            <p class="projectLinks"><a href="#">Repo</a></p>
+                            <p class="projectLinks"><a href="#">Live Link</a></p>
+                        </div>
+
+                        <div class="projectPlaceholder">
+                            <div class="box box1"></div>
+                            <p class="projectTitle">Placeholder 3</p>
+                            <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <p class="projectLinks"><a href="#">Repo</a></p>
+                            <p class="projectLinks"><a href="#">Live Link</a></p>
+                        </div>
+                    </div>
+
                 <h2 class="projects">Languages:</h2>
                 <div class="languages">
                     <i class="fab fa-html5 fa-2x"></i>
@@ -59,9 +79,11 @@
 
     <footer>
         <div id="contact" class="contact">
-
+            
             <form action="https://formspree.io/xqkypgee" method="post" class="form">
-                <legend class="legend"></h2 class="projects">Contact Me</h2></legend>
+                <fieldset>
+                    <legend class="legend"><h2 class="contactMe">Contact Me</h2></legend>
+                </fieldset>
                 <label for="firstName" class="form-titles">First Name</label>
                 <input placeholder="John" type="text" name="First Name" id="firstName" class="inputs">
 
@@ -72,20 +94,23 @@
                 <input placeholder="abc123@email.com" name="Email" type="email" id="email" class="inputs">
 
                 <label for="message-box" class="form-titles">Message</label>
-                <textarea id="message-box" name="Message" class="inputs"></textarea>
-
+                <textarea placeholder="Click to type message" id="message-box" name="Message" class="inputs"></textarea>
 
                 <button type="submit" class="submit">Submit</button>
             </form>
-
-            <a href="#top">Back to top<i class="fas fa-sort-up" ></i></a>
-
-            <article class="other-links">
-                <h2 class="projects"><span class="footer-text">Find Me Here also</span></h2>
-                <a href="https://github.com/GeorgeTheDevelopr">Github</a> | 
+            <div class='contactInfo'>
+                <p>E: Sumthnabtgeorge@gmail.com</p>
+                <p>Ph: 470-225-XXXX</p>
+                <h2 class="additionalContact">Find Me Here also</h2>
+                <a href="https://github.com/GeorgeTheDevelopr">Github</a>
+                <div></div>
                 <a href="https://www.linkedin.com/in/george-brown-9070a8140/">LinkedIn</a>
-            </article>
+            </div>            
         </div> 
+        <article class="other-links">
+            
+            <a href="#top">Back to top<i class="fas fa-sort-up" ></i></a>
+        </article>
     </footer>
 </div>
 </body>

@@ -132,6 +132,79 @@ a {
     .projectsContainer {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .box {
+        background-color: #E6E8E6;
+        width: 60%;
+        height: 14rem;
+        margin: 1rem 1rem;
+        max-width: 360px;
+        border-radius: 2rem;
+        text-align: center;
+    } 
+
+    .boxOneImg {
+        width: 65%;
+        height: auto;
+        border-radius: 0;
+        margin-top: 30px;
+        text-align: center;
+        border: 0;
+    }
+
+    .projects {
+        color: white;
+    }
+
+    .projectPlaceholder {
+        display: flex;
+        flex: 1 1 0;
+        min-width: 0;
+        margin: 6rem 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectDesc {
+        background-color: #E6E8E6;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .projectTitle {
+        color: white;
+    }
+
+    .projectDesc, .projectTitle {
+        text-align: center;
+    }
+
+    .projectLinks {
+        font-size: 1rem
+    }
+
+    .projectLinks > a {
+        color: #E6E8E6;
+    }
+
+    .fab {
+        color: #E6E8E6;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #E6E8E6;
+        border-radius: .75rem;
+    }
+
+    /* .projectsContainer {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
     
@@ -155,19 +228,41 @@ a {
 
     .fab {
         color: white
-    }
+    } */
     /* FOOTER SECTION - Mobile */
     /* Form */
+    .languages {
+        text-align: center;
+    }
+
     .contact {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-top: 3rem;
     }
+
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .contactMe {
+        color: #2D2D2A;
+
+    }
+
+    fieldset {
+        border: none;
+    }
+
     .form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 1rem;
     }
 
     .inputs {
@@ -175,6 +270,8 @@ a {
         max-width: 30rem;
         height: 3rem;
         margin-bottom: 1.5rem;
+        border: none;
+        border-radius: 15px;
     }
 
     .form-titles {
@@ -212,13 +309,13 @@ a {
         border-radius: .75rem .75rem 0 0;
     }
 
-    .footer-text {
+    .additionalContact {
         color: #2D2D2A;
     }
     /* END OF FOOTER */
 
 /* Tablet & Desktop Display*/
-@media screen and (min-width: 581px) {
+@media screen and (min-width: 761px) {
     /* HEADER & NAV - Tablet & Desktop */
     .container {
         display: flex;
@@ -237,7 +334,7 @@ a {
    .container > .header h1 {
        margin: 0;
        font-family: Sura, serif;
-       font-size: 5vw;
+       font-size: 3vw;
        color: #2D2D2A;
        ;
    }
@@ -291,7 +388,7 @@ a {
         align-items: center;
         background-color: #E6E8E6;
         margin-top: 2rem;
-        padding: 2rem 1rem;
+        padding: 2rem 10rem;
         border-radius: .75rem .75rem .75rem .75rem;
     }
 
@@ -316,7 +413,7 @@ a {
     .projectsContainer {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        align-items: flex-start;
     }
     
     .box {
@@ -325,23 +422,72 @@ a {
         height: 14rem;
         margin: 1rem 1rem;
         max-width: 360px;
-    }   
+        border-radius: 2rem;
+    } 
+
+    .boxOneImg {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        margin-top: 30px;
+        text-align: center;
+        border: 0;
+    }
 
     .projects {
         color: white;
+    }
+
+    .projectPlaceholder {
+        display: flex;
+        flex: 1 1 0;
+        min-width: 0;
+        margin: 0 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectDesc {
+        background-color: #E6E8E6;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .projectTitle {
+        color: white;
+    }
+
+    .projectDesc, .projectTitle {
+        text-align: center;
+    }
+
+    .projectLinks {
+        font-size: 1rem
+    }
+
+    .fab {
+        color: #E6E8E6;
     }
 
     /* FOOTER SECTION - Tablet & Desktop */
     /* Form */
     .contact {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
+        background-color: #E6E8E6;
+        border-radius: .75rem;
+    }
+
+    .contactMe {
+        color: #2D2D2A;
     }
     .form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 1rem;
     }
 
     .inputs {
@@ -349,12 +495,14 @@ a {
         max-width: 30rem;
         height: 3rem;
         margin-bottom: 1.5rem;
+        border: none;
+        border-radius: 15px;
     }
 
     .form-titles {
         font-family: Titillium Web;
         font-size: 1.3rem;
-        color: #E6E8E6;
+        color: #2D2D2A;
     }
 
     #message-box {
@@ -370,6 +518,33 @@ a {
         font-size: 0.8rem;
 
     }
+
+    .contactInfo {
+        margin-top: 15rem;
+        background-color: #E6E8E6;
+    }
+
+    .projectLinks > a {
+        color: #E6E8E6;
+
+    }
+
+    fieldset {
+        border: none;
+        display: inline-block;
+        margin-left: 303.867px;
+    }
+
+    .contactTitle {}
+
+    .additionalContact {
+        font-family: Titillium Web;
+        font-size: 1.25rem;
+        color: #2D2D2A;
+        text-align: initial;
+        margin-top: 4rem;
+      }
+    
     /* END OF FOOTER */
 }
 
